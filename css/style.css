@@ -102,10 +102,6 @@
     margin-top: 0.5rem;
 }
 
-/* .dropdown-content a:hover {
-    background-color: #ddd;
-} */
-
 .arrow {
     border: solid black;
     border-width: 0 2px 2px 0;
@@ -122,18 +118,19 @@
 
 
 .nav-links {
-    display: flex;
     padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
     border-bottom: 1px solid var(--blue-colorstroke);
     font-family: var(--body-font);
+    background-color: white;
+    border-bottom: 0.5rem;
 }
 
 .nav-links a {
     margin-left: 2.5rem;
     text-decoration: none;
     color: black;
-    
+    background-color: white;
+    font-size: 12px;
 }
 
 
