@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+    </style>
     <title>Product page</title>
 </head>
 <body>
     <head>
         <nav>
             <div class="uppernav">
-                <img src="assets/nav-assets/mindspace_logo1.svg" alt="logo">
-                <input type="text" placeholder="Type title, name of the author or ISBN">
-                <button type="submit">SEARCH</button>
+                <img class="logo" src="assets/nav-assets/mindspace_logo1.svg" alt="logo">
+                <div class="search-bar">
+                    <div class="search-logo">
+                        <img src="/assets/nav-assets/search.svg" alt="logo-search">
+                    </div>
+                    <input type="text" placeholder=" Type title, name of the author or ISBN">
+                    <button type="submit">SEARCH</button>
+                </div>
                 <div class="buttons">
                     <img src="assets/nav-assets/User_fill.svg" alt="account">
                     <img src="assets/nav-assets/Favorite_fill.svg" alt="wishlist">
@@ -21,11 +31,18 @@
             </div>
             <div class="nav-links">
                 <div class="dropdown-books">
-                    <a href="#" class="dropbtn">BOOKS</a>
+                    <a href="#" class="dropbtn">BOOKS <i class="arrow down"></i> </a>
                         <div class="dropdown-content">
-                          <a href="#">Link 1</a>
-                          <a href="#">Link 2</a>
-                          <a href="#">Link 3</a>
+                          <a href="#"><b>Newly Published</b></a>
+                          <a href="#"><b>All</b></a>
+                          <a href="#">Philosophy</a>
+                          <a href="#">Phychology</a>
+                          <a href="#">Pedagogy</a>
+                          <a href="#">Meditation & Mindfulness</a>
+                          <a href="#">Management & Organizations</a>
+                          <a href="#">Language</a>
+                          <a href="#">Imprint</a>
+                          <a href="#">The School of Life</a>
                         </div>
                 </div>
                 <a href="#">AUTHORS</a>
