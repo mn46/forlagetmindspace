@@ -67,7 +67,7 @@
                     <h3>Author</h3>
 
                     <div class="author-search">
-                        <img src="assets/icons/search-authors.svg" alt="search icon">
+                        <img class="icon" src="assets/icons/search-authors.svg" alt="search icon">
                         <input type="text" placeholder="Type name of the author">
                     </div>
 
@@ -90,11 +90,33 @@
 
             </div>
 
-            <div class="sorting">
-                
+        </div>
+
+        <div class="sorting">
+            <button>
+                <img class="icon" src="assets/icons/sorting.svg" alt="sorting icon">
+                <span>Sort by</span>
+                <img src="assets/icons/arrow.svg" alt="arrow icon">
+            </button>
+            <select name="sort" id="sort" class="sort">
+                <option value="recommended">recommended</option>
+                <option value="top rated">top rated</option>
+                <option value="price low to high">price low to high</option>
+                <option value="price high to low">price high to low</option>
+                <option value="newest first">newest first</option>
+                <option value="oldest first">oldest first</option>
             </div>
+        </div>
 
+        <div class="product-list">
+            <div class="book-card">
+                <img class="book-image" src="assets/cyborgmanifest.webp" alt="cyborgmanifest">
+                <div class="below-image">
+                    <span class="book-genre">philosophy</span>
+                    <img class="favourites" src="assets/icons/add-favourites.svg" alt="add to favourites icon">
 
+                </div>
+            </div>
         </div>
 
     </main>
