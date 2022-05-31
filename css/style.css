@@ -1,7 +1,10 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Merriweather', serif;
 }
+
+
 
 /* variables */
 
@@ -18,4 +21,110 @@ body {
     --body-size: 2vh;
     --nav-size: 1.8vh;
     --breadcrumbs-size: 1.5vh;
+}
+
+/* main grid */
+
+#product-list {
+    margin: 8%;  
+}
+
+#product-list h1 {
+    text-align: center;
+}
+
+#products-grid {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 16vw 75vw;
+    grid-template-rows: 5vw 90vw;
+}
+
+/* sorting */
+
+#sorting-form {
+    column-span: all;
+    justify-self: end;
+}
+
+.icon {
+    width: 1.5vw;
+    height: auto;
+}
+
+/* filters */
+
+#filters-form {
+    grid-column: 1/ span 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.filters-dropdown {
+    padding: 1.5vw;
+    border: 1px solid var(--blue-colorstroke);
+}
+
+.dropdown-tag {
+    display: flex;
+    flex-direction: row;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+}
+
+.authors-search {
+    display: flex;
+    flex-direction: row;
+}
+
+.all-products {
+    padding: 0 3vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+.book-card {
+    width: 15vw;
+    height: auto;
+}
+
+.book-image {
+    width: 100%;
+    height: auto;
+}
+
+.below-image {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 60% 20% 20%;
+    border: 1px solid var(--blue-colorstroke);
+}
+
+.book-genre {
+    text-transform: uppercase;
+    font-family: var(--body-font);
+    border: 1px solid var(--blue-colorstroke);
+}
+
+.favourites, .buy, .book-icon, .ebook-icon {
+    width: 2vw;
+    height: auto;
+}
+
+.title {
+    color: var(--secondary-color);
+}
+
+.price-card {
+    display: flex;
+    flex-direction: row;
 }
