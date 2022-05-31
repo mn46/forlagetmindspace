@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* variables */
+
+:root {
+    --headings-font: 'Merriweather', serif;
+    --body-font: 'Merriweather Sans', serif;
+    --blue-color: #E5F1F3 ;
+    --blue-colorstroke: #A5C3CB;
+    --secondary-color: #CE6245;
+
+    --heading1-size: 3.9vh;
+    --heading2-size: 2.6vh;
+
+    --body-size: 2vh;
+    --nav-size: 1.8vh;
+    --breadcrumbs-size: 1.5vh;
+}
