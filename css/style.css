@@ -148,7 +148,38 @@ b {
     font-weight: 400;
 }
 
-/* main grid */
+/* home page */
+
+#home-main {
+    margin: 0;
+}
+
+/* home banner */
+
+.banner {
+    position: relative;
+    height: 40vw;
+    background-image: url("../assets/graphics/banner.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slider-button {
+    position: absolute;
+    top: 33vw;
+    left: 8vw;
+    height: 3vw;
+    width: 12vw;
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+
+/* product-list grid */
 
 #product-list {
     margin: 8%;  
