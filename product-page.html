@@ -4,9 +4,169 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+    </style>
     <title>Product page</title>
 </head>
 <body>
-    
+    <head>
+        <nav>
+            <div class="uppernav">
+                <img class="logo" src="assets/nav-assets/mindspace_logo1.svg" alt="logo">
+                <div class="search-bar">
+                    <div class="search-logo">
+                        <img src="assets/nav-assets/search.svg" alt="logo-search">
+                    </div>
+                    <input type="text" placeholder=" Type title, name of the author or ISBN">
+                    <button>SEARCH</button>
+                </div>
+                <div class="buttons">
+                    <img src="assets/nav-assets/User_fill.svg" alt="account">
+                    <img src="assets/nav-assets/Favorite_fill.svg" alt="wishlist">
+                    <img src="assets/nav-assets/Bag_alt_fill.svg" alt="bag">
+                </div>
+            </div>
+            <div class="nav-links">
+                <div class="dropdown-books">
+                    <a href="#" class="dropbtn">BOOKS <i class="arrow down"></i> </a>
+                        <div class="dropdown-content">
+                          <a href="#"><b>Newly Published</b></a>
+                          <a href="#"><b>All</b></a>
+                          <a href="#">Philosophy</a>
+                          <a href="#">Phychology</a>
+                          <a href="#">Pedagogy</a>
+                          <a href="#">Meditation & Mindfulness</a>
+                          <a href="#">Management & Organizations</a>
+                          <a href="#">Language</a>
+                          <a href="#">Imprint</a>
+                          <a href="#">The School of Life</a>
+                        </div>
+                </div>
+                <a href="#">AUTHORS</a>
+                <a href="#">E-JOURNAL</a>
+                <a href="#">EVENTS</a>
+                <a href="#">NEWSLETTER</a>
+                <a href="#">ABOUT</a>
+            </div>
+        </nav>
+    </head>
+    <main>
+        <div class="breadcrumbs">
+            <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+  <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+</svg><i class="arrow right"></i></a>
+            <a href="#">Books <i class="arrow right"></i></a>
+            <a href="#">Philosophy <i class="arrow right"></i></a>
+            <a href="#">Moving Worlds <i class="arrow right"></i></a>
+        </div>
+        <!-- <template id="product-template"> -->
+        <section class="product">
+            <img src="assets/aerboedighed_fordomme.webp" alt="book">
+            <div class="product-info">
+            <h1 class="genre">PHILOSOPHY</h1>
+            <h2 class="name-of-book">Moving worlds</h2>
+            <h3 class="author-of-book">John Shooter</h3>
+            <div class="ratings">
+                <img src="assets/icons/filled-star.svg" alt="filled-star">
+                <img src="assets/icons/filled-star.svg" alt="filled-star">
+                <img src="assets/icons/filled-star.svg" alt="filled-star">
+                <img src="assets/icons/filled-star.svg" alt="filled-star">
+                <img src="assets/icons/empty-star.svg" alt="empty-star">
+                <p>(102)</p>
+            </div>
+            <h4 class="price"><span>DKK</span> 298,-</h4>
+            <div class="buttons-product">
+                 <div class="btns-product">
+                    <button class="like">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                    <path d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                    </svg>
+                    </button>
+                <div class="quantity">
+                    <span class="down-counter" onClick="decreaseCount(event, this)">-</span>
+                    <input type="text" value="1" aria-label="counter" />
+                    <span class="up-counter" onClick="increaseCount(event, this)">+</span>
+                  </div>
+                </div>
+                <button class="add-to-bag">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
+                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z"/>
+                    </svg> ADD TO BAG
+                </button>
+            </div>
+            </div>
+            
+            <!-- <button class="buyorlike"></button> -->
+            <div class="about">
+                <h5>About</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque vivamus ut platea nec proin phasellus. A sociis donec eget ultrices dui, adipiscing. Phasellus ut tincidunt amet felis arcu, consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque vivamus ut platea nec proin phasellus. A sociis donec eget ultrices dui, adipiscing. Phasellus ut tincidunt amet felis arcu, consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <a href="#">read more</a> 
+            
+            <div class="product-details">
+                <div class="versions-of-book">
+                <div class="buttons">
+                <button class="ebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-tablet-fill" viewBox="0 0 16 16">
+                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm7 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
+                    </svg>
+                    E-book
+                </button>
+                <button class="hardback">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-book-fill" viewBox="0 0 16 16">
+                    <path d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                    </svg>
+                    Hardback
+                </button>
+            </div>
+            </div>
+            <div class="product-details">
+                
+            </div>
+            </div>
+        </div>
+            
+        </section>
+        <!-- </template> -->
+        <!-- im not sure if it will be dynamic so i wont add a template -->
+        <section class="latest-reviews">
+            <div class="review">
+                <img src="" alt="">
+                <h6></h6>
+                <div class="stars"></div>
+                <p></p>
+            </div>
+        </section>
+        <section class="meettheauthor">
+            <img src="" alt="">
+            <h7></h7>
+            <p></p>
+            <div class="ratings-author">
+                <p></p>
+            </div>
+            <div class="work">
+                <!-- <a href=""></a> -->
+                <p></p>
+            </div>
+            <p></p>
+            <!-- <a href=""></a> -->
+        </section>
+        <section class="more-books">
+            <template class="more-books-template">
+                <div class="book-card">
+                    <img src="" alt="">
+                    <h8></h8>
+                    <p class="author"></p>
+                    <p class="price"></p>
+                </div>
+            </template>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/counter.js"></script>
 </body>
 </html>
