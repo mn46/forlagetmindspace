@@ -192,7 +192,7 @@ b {
 #products-grid {
     margin: auto;
     display: grid;
-    grid-template-columns: 16vw 75vw;
+    grid-template-columns: 18vw 70vw;
     grid-template-rows: 5vw 90vw;
 }
 
@@ -231,15 +231,42 @@ b {
     flex-direction: column;
 }
 
-.input {
-    display: flex;
-    flex-direction: row;
+.filters h3 {
+    margin: 6% 0 3% 0;
 }
 
-.authors-search {
+.input {
+    padding: 2% 0;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
+
+label {
+    font-family: var(--headings-font);
+}
+
+.checkbox {
+    margin-right: 4%;
+    -webkit-appearance: none;
+    padding: 2%;
+    border: 2px solid var(--blue-colorstroke);
+    border-radius: 10%;
+}
+
+
+.checkbox:checked {
+	background-color: var(--blue-colorstroke);
+	border: 2px solid var(--blue-colorstroke);
+}
+
+.author-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* product displayed on product list */
 
 .all-products {
     padding: 0 3vw;
@@ -249,7 +276,7 @@ b {
 }
 
 .book-card {
-    width: 15vw;
+    width: 13vw;
     height: auto;
 }
 
