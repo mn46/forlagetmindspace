@@ -32,11 +32,11 @@
     margin-left: 2rem;
 }
 
-.buttons {
+.buttons-nav {
     margin-right: 2rem;
 }
 
-.buttons img {
+.buttons-nav img {
     height: 25px;
     margin-left: 12px;
 }
@@ -178,16 +178,16 @@ b {
 /* product */
 
 main {
-    margin-right: 2rem;
-    margin-left: 2rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
     margin-top: 1rem;
 }
 
 .product {
     display: grid;
-    grid-template-columns: 1fr 0.5fr 0.8fr;
+    grid-template-columns: 0.8fr 0.5fr 0.8fr;
     font-family: var(--body-font);
-    column-gap: 4rem;
+    column-gap: 3rem;
     margin-top: 4rem;
 }
 
@@ -215,9 +215,11 @@ main {
 .product img {
     grid-column: 1/2;
     max-width: 100%;
+    max-height:100%;
 }
 
 .ratings {
+    margin-top: 1rem;
     display: flex;
     margin-right: 1px;
     font-weight: 200;
@@ -227,11 +229,13 @@ main {
 
 .ratings img {
     margin-right: 5px;
+    height: 100%;
 }
 
 .price {
     font-size: var(--heading1-size);
     font-weight: 400;
+    margin-top: 3rem;
    
 }
 
@@ -305,7 +309,7 @@ main {
 .buttons-product {
    display: flex;
    flex-direction: column;
-   /* align-items: flex-end; */
+   margin-top: auto;
 }
 
 .product-info {
@@ -327,6 +331,11 @@ h5 {
     margin-top: 1rem;
     line-height: 1.5;
     margin-bottom: 1rem;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
 }
 
 .about a {
@@ -351,9 +360,13 @@ h5 {
     font-family: var(--body-font);
     font-weight: 800;
     font-size: var(--nav-size);
-    margin-top: 2rem;
 }
 
 .versions-of-book {
-    text-align: center;
+    margin-top: auto;
 }
+
+.product-details {
+    margin-top: auto;
+}
+
