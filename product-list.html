@@ -170,7 +170,27 @@
 
             <div class="all-products">
 
-                <div class="book-card">
+                <template id="book-card-template">
+                    <div class="book-card">
+                        <img class="book-image" src="" alt="">
+                        <div class="below-image">
+                            <span class="book-genre"></span>
+                            <img class="favourites" src="assets/icons/add-favourites.svg" alt="add to favourites icon">
+                            <img class="buy" src="assets/icons/bag.svg" alt="bag icon">
+                        </div>
+                        <h3 class="title"></h3>
+                        <h4 class="author"></h4>
+                        <div class="price-card">
+                            <div class="book-ebook">
+                                <img class="book-icon" src="assets/icons/book.svg" alt="book icon">
+                                <img class="ebook-icon" src="assets/icons/ebook.svg" alt="ebook icon">
+                            </div>
+                            <p class="price"></p>
+                        </div>
+                    </div>
+                </template>
+                
+                <!-- <div class="book-card">
                     <img class="book-image" src="assets/cyborgmanifest.webp" alt="cyborgmanifest">
                     <div class="below-image">
                         <span class="book-genre">philosophy</span>
@@ -186,9 +206,9 @@
                         </div>
                         <p class="price">298 DKK</p>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="book-card">
+                <!-- <div class="book-card">
                     <img class="book-image" src="assets/cyborgmanifest.webp" alt="cyborgmanifest">
                     <div class="below-image">
                         <span class="book-genre">philosophy</span>
@@ -240,7 +260,7 @@
                         </div>
                         <p class="price">298 DKK</p>
                     </div>
-                </div>
+                </div> -->
 
             </div>
 
