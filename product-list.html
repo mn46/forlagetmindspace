@@ -64,10 +64,10 @@
         <div id="products-grid">
 
             <form id="sorting-form" action="" method="get">
-                <button>
-                    <img class="icon" src="assets/icons/sorting.svg" alt="sorting icon">
+                <button id="sort-button">
+                    <img class="icon-sort" src="assets/icons/sorting.svg" alt="sorting icon">
                     <span>Sort by</span>
-                    <img class="icon" src="assets/icons/arrow.svg" alt="arrow icon">
+                    <img class="icon-arrow" src="assets/icons/arrow.svg" alt="arrow icon">
                 </button>
                 <select name="sort" id="sort" class="sort">
                     <option value="recommended">recommended</option>
@@ -117,11 +117,6 @@
                         </div>
 
                         <div class="input">
-                            <input class="checkbox" id="philosophy" type="checkbox" aria-labelledby="philosophy">
-                            <label for="philosophy">Philosophy</label>
-                        </div>
-
-                        <div class="input">
                             <input class="checkbox" id="language" type="checkbox" aria-labelledby="language">
                             <label for="language">Language</label>
                         </div>
@@ -145,7 +140,7 @@
 
                         <div class="author-search">
                             <img class="icon" src="assets/icons/search-authors.svg" alt="search icon">
-                            <input type="text" placeholder="Type name of the author">
+                            <input class="author-searchbar" type="text" placeholder="Type name of the author">
                         </div>
 
                         <div class="authors-scroll">
@@ -204,7 +199,7 @@
                     <h4 class="author">Donna Haraway</h4>
                     <div class="price-card">
                         <div class="book-ebook">
-                            <img class="book-icon" src="assets/icons/book.svg" alt="book icon">
+                            <img class="book-icon" src="assets/icons/book-active.svg" alt="book icon">
                             <img class="ebook-icon" src="assets/icons/ebook.svg" alt="ebook icon">
                         </div>
                         <p class="price">298 DKK</p>
