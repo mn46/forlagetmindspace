@@ -26,7 +26,7 @@ function showBook(books) {
 
     bookClone.querySelector("img.book-image").src = books.book_picture;
 
-    bookClone.querySelector(".book-genre").textContent = books.categories;
+    bookClone.querySelector(".book-genre").textContent = books.genre;
 
 
     document.querySelector(".all-products").appendChild(bookClone);
