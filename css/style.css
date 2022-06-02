@@ -30,6 +30,7 @@
 .logo {
     width: 140px;
     margin-left: 2rem;
+    cursor: pointer;
 }
 
 .buttons {
@@ -66,6 +67,7 @@
     outline: none;
     font-family: var(--body-font);
     font-weight: 300;
+    cursor: text;
 }
 
 .search-bar button {
@@ -264,6 +266,7 @@ b {
 
 label {
     font-family: var(--headings-font);
+    cursor: pointer;
 }
 
 .checkbox {
@@ -273,6 +276,7 @@ label {
     aspect-ratio: 1/1;
     border: 2px solid var(--blue-colorstroke);
     border-radius: 10%;
+    cursor: pointer;
 }
 
 
@@ -281,16 +285,6 @@ label {
 	background-color: var(--blue-colorstroke);
 	border: 2px solid var(--blue-colorstroke);
 }
-
-/* .checkbox:checked:after {
-    padding: 0;
-    margin: 0;
-	content: '\2713';
-	font-size: 10px;
-    text-align: center;
-    line-height: 10px;
-	color: #fff;
-} */
 
 .author-search {
     display: flex;
@@ -305,7 +299,7 @@ label {
     width: 100%;
     -webkit-appearance: none;
     border: none;
-
+    cursor: text;
 }
 
 
@@ -328,6 +322,7 @@ label {
     height: auto;
     padding: 0;
     margin: 0;
+    cursor: pointer;
 }
 
 .below-image {
@@ -352,6 +347,7 @@ label {
 .favourites, .buy, .book-icon, .ebook-icon {
     width: 1.8vw;
     height: auto;
+    cursor: pointer;
 }
 
 .title {
@@ -360,6 +356,7 @@ label {
     font-weight: 900;
     font-size: 1.3vw;
     color: var(--secondary-color);
+    cursor: pointer;
 }
 
 .author {
@@ -367,6 +364,7 @@ label {
     font-family: var(--body-font);
     font-size: 1vw;
     color: #737D80;
+    cursor: pointer;
 }
 
 .price-card {
