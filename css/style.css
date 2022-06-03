@@ -201,9 +201,11 @@ b {
 /* sorting */
 
 #sorting-form {
+    width: 8vw;
     column-span: all;
     justify-self: end;
     position: relative;
+    /* grid-area: 1 / 2 / 2 / 3; */
 }
 
 .icon {
@@ -217,7 +219,7 @@ b {
     height: 2vw;
     border: 2px solid var(--blue-colorstroke);
     border-radius: 5%;
-    background-color: transparent;
+    background-color: #fff;
 }
 
 .icon-sort, .icon-arrow {
@@ -226,7 +228,10 @@ b {
 }
 
 .sort {
+    width: 8vw;
+    height: 2vw;
     position: absolute;
+    z-index: -1;
 }
 
 /* filters */
@@ -358,6 +363,11 @@ label {
     color: var(--secondary-color);
     cursor: pointer;
 }
+
+a, a:active, a:visited {
+    text-decoration: none;
+}
+
 
 .author {
     margin-top: 5%;
