@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;500&family=Merriweather:wght@300&display=swap"
+        rel="stylesheet">
 
     <link href="css/style.css" rel="stylesheet">
 
@@ -35,18 +38,18 @@
             <div class="nav-links">
                 <div class="dropdown-books">
                     <a href="#" class="dropbtn">BOOKS <i class="arrow down"></i> </a>
-                        <div class="dropdown-content">
-                          <a href="#"><b>Newly Published</b></a>
-                          <a href="#"><b>All</b></a>
-                          <a href="#">Philosophy</a>
-                          <a href="#">Phychology</a>
-                          <a href="#">Pedagogy</a>
-                          <a href="#">Meditation & Mindfulness</a>
-                          <a href="#">Management & Organizations</a>
-                          <a href="#">Language</a>
-                          <a href="#">Imprint</a>
-                          <a href="#">The School of Life</a>
-                        </div>
+                    <div class="dropdown-content">
+                        <a href="#"><b>Newly Published</b></a>
+                        <a href="#"><b>All</b></a>
+                        <a href="#">Philosophy</a>
+                        <a href="#">Phychology</a>
+                        <a href="#">Pedagogy</a>
+                        <a href="#">Meditation & Mindfulness</a>
+                        <a href="#">Management & Organizations</a>
+                        <a href="#">Language</a>
+                        <a href="#">Imprint</a>
+                        <a href="#">The School of Life</a>
+                    </div>
                 </div>
                 <a href="#">AUTHORS</a>
                 <a href="#">E-JOURNAL</a>
@@ -83,9 +86,125 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
               </div>
         </div> -->
+        <div class="HPwrapper">
+            <section class="HPintro">
+                <h3 class="HPh3">We are a Danish publishing house with passion for high-quality books</h3>
+            </section>
+            <section class="HPnew">
+                <div class="sectionTag red">New Arrivals</div>
+                <div class="HPscroll">
+                    <template id="book-card-template">
+                        <div class="book-card">
+                            <a class="product-link" href="" aria-label="go to product page"><img class="book-image"
+                                    src="" alt=""></a>
+                            <div class="below-image">
+                                <span class="book-genre"></span>
+                                <img class="favourites" src="assets/icons/add-favourites.svg"
+                                    alt="add to favourites icon">
+                                <img class="buy" src="assets/icons/bag.svg" alt="bag icon">
+                            </div>
+                            <a class="product-link" href="" aria-label="go to product page">
+                                <h3 class="title"></h3>
+                            </a>
+                            <h4 class="author"></h4>
+                            <div class="price-card">
+                                <div class="book-ebook">
+                                    <img class="book-icon" src="" alt="book icon">
+                                    <img class="ebook-icon" src="" alt="ebook icon">
+                                </div>
+                                <p class="price"></p>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </section>
+            <section class="HPcategories">
+                <h3 class="HPh3">Browse by categories</h3>
+                <div class="HPcategorylist">
+                    <a href="#" class="HPcategorybutt">Philosophy</a>
+                    <a href="#" class="HPcategorybutt">Psychology</a>
+                    <a href="#" class="HPcategorybutt">Pedagogyy</a>
+                    <a href="#" class="HPcategorybutt">Management & Organizations</a>
+                    <a href="#" class="HPcategorybutt">Language</a>
+                    <a href="#" class="HPcategorybutt">Imprint</a>
+                    <a href="#" class="HPcategorybutt">The School of Life</a>
+                    <a href="#" class="HPcategorybutt">Meditation & Mindfulness</a>
+                </div>
+            </section>
+            <section class="HPauthors">
+                <h3 class="HPh3">Authors</h3>
+            </section>
+            <section class="HPevents">
+                <h3 class="HPh3">Upcoming events</h3>
+                <article class="HPevent">
+                    <div class="HPeventimg"></div>
+                    <div class="HPeventinfo">
+                        <div class="sectionTag red">30. 5. 2022</div>
+                        <div class="HPeventtxt">
+                            <h2>Philosophy in our everyday lives</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque vivamus ut platea
+                                necproin phasellus. A sociis donec eget ultrices dui, adipiscing. Phasellus ut tincidunt
+                                amet felis arcu, consequat. Risus in sollicitudin magna facilisi fermentum metus,
+                                maecenas.
+                            </p>
+                            <button class="readmorebutton">read more</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="HPtoprated">
+                <h3 class="HPh3">Top rated books</h3>
+                <div class="HPtopbook">
+                    <div class="HPbookinfo"></div>
+                    <div class="HPreviews">
+                        <div class="HPr r1">
+                            <div class="HPreviewpt1">
+                                <img src="assets/review_avatar.png" alt="">
+                                <div>
+                                    <p class="b">Wade Warren</p>
+                                    <p>stars</p>
+                                </div>
+                            </div>
+                            <div class="HPreviewpt2">
+                                <p>Sit vitae ipsum dignissim, ac Vestibulum Donec nibh ex tempor felis, ex varius amet,
+                                    amet, tincidunt vitae sit vitae non tincidunt maximus sollicitudin. Ut at... </p>
+                            </div>
+                        </div>
+                        <div class="HPr r2">
+                            <div class="HPreviewpt1">
+                                <img src="assets/review_avatar.png" alt="">
+                                <div>
+                                    <p class="b">Wade Warren</p>
+                                    <p>stars</p>
+                                </div>
+                            </div>
+                            <div class="HPreviewpt2">
+                                <p>Sit vitae ipsum dignissim, ac Vestibulum Donec nibh ex tempor felis, ex varius amet,
+                                    amet, tincidunt vitae sit vitae non tincidunt maximus sollicitudin. Ut at... </p>
+                            </div>
+                        </div>
+                        <div class="HPr r3">
+                            <div class="HPreviewpt1">
+                                <img src="assets/review_avatar.png" alt="">
+                                <div>
+                                    <p class="b">Wade Warren</p>
+                                    <p>stars</p>
+                                </div>
+                            </div>
+                            <div class="HPreviewpt2">
+                                <p>Sit vitae ipsum dignissim, ac Vestibulum Donec nibh ex tempor felis, ex varius amet,
+                                    amet, tincidunt vitae sit vitae non tincidunt maximus sollicitudin. Ut at... </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+        </div>
     </main>
 
     <footer></footer>
-    
+
 </body>
+
 </html>
