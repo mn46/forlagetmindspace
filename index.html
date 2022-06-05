@@ -61,9 +61,9 @@
     </header>
 
     <main id="home-main">
-        <div class="banner">
+        <!-- <div class="banner">
             <button class="slider-button">read more</button>
-        </div>
+        </div> -->
         <!-- <div id="slider-container">
             <div id="slide1">
                 <button class="slider-button">read more</button>
@@ -94,7 +94,7 @@
                 <div class="sectionTag red">New Arrivals</div>
                 <div class="HPscroll">
                     <template id="book-card-template">
-                        <div class="book-card">
+                        <div class="book-card HPcard">
                             <a class="product-link" href="" aria-label="go to product page"><img class="book-image"
                                     src="" alt=""></a>
                             <div class="below-image">
@@ -109,8 +109,8 @@
                             <h4 class="author"></h4>
                             <div class="price-card">
                                 <div class="book-ebook">
-                                    <img class="book-icon" src="" alt="book icon">
-                                    <img class="ebook-icon" src="" alt="ebook icon">
+                                    <img class="book-icon" src="assets/icons/book.svg" alt="book icon">
+                                    <img class="ebook-icon" src="assets/icons/ebook.svg" alt="">
                                 </div>
                                 <p class="price"></p>
                             </div>
@@ -136,32 +136,77 @@
             </section>
             <section class="HPevents">
                 <h3 class="HPh3">Upcoming events</h3>
-                <article class="HPevent">
-                    <div class="HPeventimg"></div>
-                    <div class="HPeventinfo">
-                        <div class="sectionTag red">30. 5. 2022</div>
-                        <div class="HPeventtxt">
-                            <h2>Philosophy in our everyday lives</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque vivamus ut platea
-                                necproin phasellus. A sociis donec eget ultrices dui, adipiscing. Phasellus ut tincidunt
-                                amet felis arcu, consequat. Risus in sollicitudin magna facilisi fermentum metus,
-                                maecenas.
-                            </p>
-                            <button class="readmorebutton">read more</button>
+                <div class="HPeventsgrid">
+                    <article class="HPevent">
+                        <div class="HPeventimg"></div>
+                        <div class="HPeventinfo">
+                            <div class="HPeventtxt">
+                                <div class="eventTag red">30. 5. 2022</div>
+                                <h2>Philosophy in our everyday lives</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque vivamus ut
+                                    platea
+                                    necproin phasellus. A sociis donec eget ultrices dui, adipiscing. Phasellus ut
+                                    tincidunt
+                                    amet felis arcu, consequat. Risus in sollicitudin magna facilisi fermentum metus,
+                                    maecenas.
+                                </p>
+                                <button class="readmorebutton">read more</button>
+                            </div>
                         </div>
-                    </div>
-                </article>
+                    </article>
+                    <article class="HPevent">
+                        <div class="HPeventimg"></div>
+                        <div class="HPeventinfo">
+                            <div class="HPeventtxt">
+                                <div class="eventTag red">30. 5. 2022</div>
+                                <h2>Philosophy in our everyday lives</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque vivamus ut
+                                    platea
+                                    necproin phasellus. A sociis donec eget ultrices dui, adipiscing. Phasellus ut
+                                    tincidunt
+                                    amet felis arcu, consequat. Risus in sollicitudin magna facilisi fermentum metus,
+                                    maecenas.
+                                </p>
+                                <button class="readmorebutton">read more</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="HPevent">
+                        <div class="HPeventimg"></div>
+                        <div class="HPeventinfo">
+                            <div class="HPeventtxt">
+                                <div class="eventTag red">30. 5. 2022</div>
+                                <h2>Philosophy in our everyday lives</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque vivamus ut
+                                    platea
+                                    necproin phasellus. A sociis donec eget ultrices dui, adipiscing. Phasellus ut
+                                    tincidunt
+                                    amet felis arcu, consequat. Risus in sollicitudin magna facilisi fermentum metus,
+                                    maecenas.
+                                </p>
+                                <button class="readmorebutton">read more</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </section>
             <section class="HPtoprated">
-                <h3 class="HPh3">Top rated book of the month</h3>
+                <h3 class="HPh3">Top rated book right now</h3>
                 <div class="HPtopbook">
                     <div class="HPbookinfo">
                         <img src="/assets/rigtig_forkaert.webp" alt="">
                         <div class="HPtopbooktxt">
                             <h1>Moving worlds</h1>
                             <h1>John Shotter</h1>
-                            <p>stars</p>
-                            <p>sit vitae ipsum dignissim, ac Vestibulum Donec nibh ex tempor felis, ex varius amet,
+                            <div class="ratings">
+                                <img src="assets/icons/filled-star.svg" alt="filled-star">
+                                <img src="assets/icons/filled-star.svg" alt="filled-star">
+                                <img src="assets/icons/filled-star.svg" alt="filled-star">
+                                <img src="assets/icons/filled-star.svg" alt="filled-star">
+                                <img src="assets/icons/empty-star.svg" alt="empty-star">
+                                <p>(102)</p>
+                            </div>
+                            <p>Sit vitae ipsum dignissim, ac Vestibulum Donec nibh ex tempor felis, ex varius amet,
                                 amet, tincidunt vitae sitsit vitae ipsum dignissim, ac Vestibulum Donec nibh ex tempor
                                 felis, ex varius amet, amet...</p>
                             <button class="readmorebutton">read more</button>
@@ -173,7 +218,14 @@
                                 <img src="assets/review_avatar.png" alt="">
                                 <div>
                                     <p class="b">Wade Warren</p>
-                                    <p>stars</p>
+                                    <div class="ratings">
+                                        <img src="assets/icons/filled-star.svg" alt="filled-star">
+                                        <img src="assets/icons/filled-star.svg" alt="filled-star">
+                                        <img src="assets/icons/filled-star.svg" alt="filled-star">
+                                        <img src="assets/icons/filled-star.svg" alt="filled-star">
+                                        <img src="assets/icons/empty-star.svg" alt="empty-star">
+                                        <p>(102)</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="HPreviewpt2">
@@ -187,7 +239,14 @@
                                 <img src="assets/review_avatar.png" alt="">
                                 <div>
                                     <p class="b">Wade Warren</p>
-                                    <p>stars</p>
+                                    <div class="ratings">
+                                        <img src="assets/icons/filled-star.svg" alt="filled-star">
+                                        <img src="assets/icons/filled-star.svg" alt="filled-star">
+                                        <img src="assets/icons/filled-star.svg" alt="filled-star">
+                                        <img src="assets/icons/filled-star.svg" alt="filled-star">
+                                        <img src="assets/icons/empty-star.svg" alt="empty-star">
+                                        <p>(102)</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="HPreviewpt2">
@@ -201,7 +260,14 @@
                                 <img src="assets/review_avatar.png" alt="">
                                 <div>
                                     <p class="b">Wade Warren</p>
-                                    <p>stars</p>
+                                    <div class="ratings">
+                                        <img src="assets/icons/filled-star.svg" alt="filled-star">
+                                        <img src="assets/icons/filled-star.svg" alt="filled-star">
+                                        <img src="assets/icons/filled-star.svg" alt="filled-star">
+                                        <img src="assets/icons/filled-star.svg" alt="filled-star">
+                                        <img src="assets/icons/empty-star.svg" alt="empty-star">
+                                        <p>(102)</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="HPreviewpt2">
@@ -217,6 +283,7 @@
     </main>
 
     <footer></footer>
+    <script src="js/homepage.js"></script>
 
 </body>
 
