@@ -258,7 +258,7 @@ b {
 }
 
 .filters h3 {
-    margin: 6% 0 3% 0;
+    margin: 13% 0 3% 0;
 }
 
 .input {
@@ -312,8 +312,15 @@ label {
 }
 
 select#authors {
+    -webkit-appearance: none;
     width: 80%;
     border: none;
+}
+
+option:checked {
+    -webkit-appearance: none;
+    border: none;
+    background-color: #F0D6CF;
 }
 
 #authors::-webkit-scrollbar {
@@ -337,15 +344,16 @@ select#authors {
 /* product displayed on product list */
 
 .all-products {
-    padding: 0 3vw;
+    padding-left: 3vw;
     display: flex;
     flex-wrap: wrap;
-    gap: 2vw;
+    justify-content: space-between;
 }
 
 .book-card {
     width: 12vw;
     height: auto;
+    margin-bottom: 8%;
 }
 
 .book-image {
