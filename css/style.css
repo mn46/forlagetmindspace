@@ -45,6 +45,7 @@
 
 
 
+
 /* navigation bar  */
 
 
@@ -157,6 +158,7 @@
     border-width: 0 2px 2px 0;
     display: inline-block;
     padding: 3px;
+    margin-left: 10px;
 }
   
 .down {
@@ -185,6 +187,7 @@
     font-size: var(--nav-size);
     font-weight: 300;
 }
+
 
 b {
     font-weight: 500;
@@ -296,6 +299,22 @@ b {
     margin-right: 10px;
 }
 
+.like-mobile {
+    display: none;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    background-color: white;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 10px;
+}
+
+.like-mobile svg {
+    margin-top: 5px;
+    margin-right: 1px;
+}
+
+
 .like svg {
     margin-top: 5px;
 }
@@ -385,6 +404,8 @@ h3 {
     font-weight: 200;
     letter-spacing: 0.03rem;
 }
+
+
 
 .about {
     display: flex;
@@ -495,7 +516,7 @@ h3 {
     
 }
 
-h4, h5 {
+.lr, h5 {
     font-size: var(--heading2-size);
     font-family: var(--headings-font);
     font-weight: 400;
@@ -598,7 +619,7 @@ h4, h5 {
 
 .name-about-card {
     color: var(--secondary-color);
-    font-size: 2.7vh;
+    font-size: var(--heading2-size);
     font-weight: 300;
 }
 
@@ -690,8 +711,60 @@ h6 {
 
 
 /* media queries  */
+@media only screen and (max-width: 1361px) {
+
+    .product {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        column-gap: 2%;
+        row-gap: 6%;
+    }
+
+    .ratings {
+        margin-top: 1rem;
+        display: flex;
+        margin-right: 1px;
+        font-weight: 200;
+        font-size: var(--body-size);
+        margin-bottom: 1rem;
+    }
+
+
+    .about {
+        grid-column: 1/4;
+        width: 100%;
+        row-gap: 20px;
+    }
+
+    .book-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .about-the-book-card {
+        margin: 5%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        align-items: center;
+    }
+
+    .information-about {
+        width: 50%;
+    }
+
+    .meettheauthor {
+        column-gap: 1%;
+        padding: 5%;
+    }
+}
+
 
 @media only screen and (max-width: 768px) {
+    
 
     /* .menu-button-container {
         display: flex;
@@ -708,9 +781,11 @@ h6 {
     /* #menu-toggle ~ .nav-links:not(:first-child) {
     } */
 
+
+
     /* font sizes */
 
-    .genre {
+    .genre ,.product-details-about-card li{
         font-size: var(--heading2-mobile);
     }
     
@@ -722,7 +797,6 @@ h6 {
         font-size: var(--heading2-mobile);
         font-weight: 300;
         color: #737D80;
-        margin-bottom: 1rem;
     }
 
     .price {
@@ -730,31 +804,59 @@ h6 {
         margin-top: 0;
     }
     
-    .product img {
+    
+    .ratings img {
+        margin-top: 0;
+        display: flex;
+        margin-right: 1px;
+        font-weight: 200;
+        font-size: var(--body-size);
+        margin-bottom: 0;
+        width: 50%;
+        height: 50%;
+    }
+
+    .ratings  {
+        width: 50%;
+
+    }
+
+    .product:first-child {
         grid-column: 1/2;
         max-width: 100%;
         max-height:100%;
         grid-column: 1/2;
+        margin-top: 0;
     }
-
-    .ratings img {
-        height: 1rem;
-    }
-
-    .about p {
-        font-size: var(--body-mobile);
-    }
-
-    h3 {
+    
+    h3{
         font-size: var(--heading1-mobile);
     }
 
-    .ratings p {
+    .ratings p, .information-about p, .about a, .about p  {
         font-size: var(--body-mobile);
+    }
+
+    .name-about-card, .add-to-bag {
+        font-size: var(--heading2-mobile);
+    }
+
+    .like {
+        display: none;
+    }
+
+    .like-mobile {
+        display: block;
+        position: absolute;
+    } 
+
+    .product img::before {
+        content: '.like-mobile';
     }
 
     .hamburger {
         display: block;
+       
         margin-right: 2.5rem;
     }
 
@@ -768,6 +870,10 @@ h6 {
 
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg); 
+    }
+
+    .white a {
+        margin-left: 0;
     }
 
     .hamburgerlinks {
@@ -785,11 +891,13 @@ h6 {
     }
 
     .hamburgerlinks.active {
+       
         left: -50px;
     }
 
     .white {
         background-color: white;
+        
     }
 
     .white a {
@@ -807,30 +915,31 @@ h6 {
         row-gap: 1rem;
     }
 
+    .logo, .buttons-nav, .search-bar {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
 
     .search-bar {
         order: 3;
         flex-basis: 100%;
         justify-content: center;
         max-width: 100%;
-        margin-left: 4%;
-        margin-right: 4%;
     }
 
     .product {
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 60% 40%;
         column-gap: 1%;
         row-gap: 5%;
         margin: 5%;
     }
 
-    .ratings {
-        margin-top: 1rem;
-        display: flex;
-        margin-right: 1px;
-        font-weight: 200;
-        font-size: var(--body-size);
-        margin-bottom: 1rem;
+    
+
+    
+    h4, h5, h6{
+        font-size: var(--heading1-mobile);
     }
 
     /* .nav-links a{
@@ -870,48 +979,116 @@ h6 {
 
     .pd {
         justify-content: space-around;
+        font-size: var(--heading1-mobile);
     }
 
     .add-to-bag {
         width: 100%;
+    }
+    .quantity, .quantity input {
+        width: 100%;
+    }
+
+    .review {
+        margin: 3%;
+        column-gap: 1%;
+    }
+
+    .reviewer {
+       height: 60%;
+       width: 60%;
+    }
+
+
+    .review-cards {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+
+    .person {
+        font-size: var(--body-mobile);
+    }
+
+    .reviewtext {
+        
+        
+        font-size: var(--body-mobile);
+    }
+
+    .about-the-book-card {
+        margin: 1%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
         
     }
-   
-}
 
-@media only screen and (max-width: 1361px) {
-
-    .product {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        column-gap: 2%;
-        row-gap: 6%;
+    .about-the-book-card {
+        margin: 5%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        align-items: center;
+    }
+    
+    .if .genre-about-card, .if .author-about-card, .text-about {
+        font-size: var(--body-mobile);
     }
 
-    .ratings {
-        margin-top: 1rem;
+    .product-details-about-card li {
+        font-size: var(--body-mobile);
+    }
+   
+
+    .ebook, .hardback {
+        height: 40px;
+        width: 50%;
+
+    }
+    .product-details {
+        font-size: var(--heading1-mobile);
+        height: 40px;
+        width: 100%;
+    }
+
+    .pd .arrow {
+        margin-left: 20%;
+    }
+
+    .quantity {
+        justify-content: space-between;
+    }
+    
+    .product {
+        grid-template-columns: 50% 50%;
+        column-gap: 2%;
+        row-gap: 5%;
+        margin: 5%;
+    }
+    
+    .ratings img {
+        margin-top: 0;
         display: flex;
         margin-right: 1px;
         font-weight: 200;
         font-size: var(--body-size);
-        margin-bottom: 1rem;
+        margin-bottom: 0;
+        width: 50%;
+        height: 50%;
     }
 
-    .about {
-        grid-column: 1/4;
+    .product img {
         width: 100%;
-        row-gap: 20px;
+        height: 100%;
+        object-fit: cover;
     }
 
-    .book-info {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .price {
+        margin-bottom: 10px;
     }
 
+    .information-about {
+        width: 80%;
 
-
+    }
 
 }
-    
-
