@@ -188,6 +188,7 @@
     font-weight: 300;
 }
 
+
 b {
     font-weight: 500;
 }
@@ -515,7 +516,7 @@ h3 {
     
 }
 
-h4, h5 {
+.lr, h5 {
     font-size: var(--heading2-size);
     font-family: var(--headings-font);
     font-weight: 400;
@@ -740,11 +741,6 @@ h6 {
         justify-content: center;
         align-items: center;
     }
-
-    .p {
-        display: flex;
-        flex-wrap: wrap;
-    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -759,13 +755,16 @@ h6 {
     .information-about {
         width: 50%;
     }
+
+    .meettheauthor {
+        column-gap: 1%;
+        padding: 5%;
+    }
 }
 
 
 @media only screen and (max-width: 768px) {
-    .meettheauthor{
-        display: none;
-    }
+    
 
     /* .menu-button-container {
         display: flex;
@@ -857,6 +856,7 @@ h6 {
 
     .hamburger {
         display: block;
+       
         margin-right: 2.5rem;
     }
 
@@ -870,6 +870,10 @@ h6 {
 
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg); 
+    }
+
+    .white a {
+        margin-left: 0;
     }
 
     .hamburgerlinks {
@@ -887,11 +891,13 @@ h6 {
     }
 
     .hamburgerlinks.active {
+       
         left: -50px;
     }
 
     .white {
         background-color: white;
+        
     }
 
     .white a {
