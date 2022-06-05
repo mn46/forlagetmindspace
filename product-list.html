@@ -17,44 +17,55 @@
 
     <header>
         <nav>
-            <div class="uppernav">
-                <a href="index.html"><img class="logo" src="assets/nav-assets/mindspace_logo1.svg" alt="logo"></a>
-                <div class="search-bar">
-                    <div class="search-logo">
-                        <img src="assets/nav-assets/search.svg" alt="logo-search">
-                    </div>
-                    <input type="text" placeholder=" Type title, name of the author or ISBN">
-                    <button>SEARCH</button>
-                </div>
-                <div class="buttons">
-                    <img src="assets/nav-assets/User_fill.svg" alt="account">
-                    <img src="assets/nav-assets/Favorite_fill.svg" alt="wishlist">
-                    <img src="assets/nav-assets/Bag_alt_fill.svg" alt="bag">
-                </div>
-            </div>
-            <div class="nav-links">
-                <div class="dropdown-books">
-                    <a href="#" class="dropbtn">BOOKS <i class="arrow down"></i> </a>
-                        <div class="dropdown-content">
-                          <a href="#"><b>Newly Published</b></a>
-                          <a href="#"><b>All</b></a>
-                          <a href="#">Philosophy</a>
-                          <a href="#">Phychology</a>
-                          <a href="#">Pedagogy</a>
-                          <a href="#">Meditation & Mindfulness</a>
-                          <a href="#">Management & Organizations</a>
-                          <a href="#">Language</a>
-                          <a href="#">Imprint</a>
-                          <a href="#">The School of Life</a>
+            <nav>
+                <div class="uppernav">
+                    <img class="logo" src="assets/nav-assets/mindspace_logo1.svg" alt="logo">
+                    <div class="search-bar">
+                        <div class="search-logo">
+                            <img src="assets/nav-assets/search.svg" alt="logo-search">
                         </div>
+                        <input type="text" placeholder=" Type title, name of the author or ISBN">
+                        <button>SEARCH</button>
+                    </div>
+                    <div class="buttons-nav">
+                        <img src="assets/nav-assets/User_fill.svg" alt="account">
+                        <img src="assets/nav-assets/Favorite_fill.svg" alt="wishlist">
+                        <img src="assets/nav-assets/Bag_alt_fill.svg" alt="bag">
+                    </div>
                 </div>
-                <a href="#">AUTHORS</a>
-                <a href="#">E-JOURNAL</a>
-                <a href="#">EVENTS</a>
-                <a href="#">NEWSLETTER</a>
-                <a href="#">ABOUT</a>
-            </div>
-        </nav>
+                <div class="nav-links">
+                    <div class="dropdown-books">
+                        <a href="#" class="dropbtn">BOOKS <i class="arrow down"></i> </a>
+                            <div class="dropdown-content">
+                              <a href="#"><b>Newly Published</b></a>
+                              <a href="#"><b>All</b></a>
+                              <a href="#">Philosophy</a>
+                              <a href="#">Phychology</a>
+                              <a href="#">Pedagogy</a>
+                              <a href="#">Meditation & Mindfulness</a>
+                              <a href="#">Management & Organizations</a>
+                              <a href="#">Language</a>
+                              <a href="#">Imprint</a>
+                              <a href="#">The School of Life</a>
+                            </div>
+                    </div>
+                    </label>
+                    <div class="hamburgerlinks">
+                        <div class="white">
+                            <a href="#">AUTHORS</a>
+                            <a href="#">E-JOURNAL</a>
+                            <a href="#">EVENTS</a>
+                            <a href="#">NEWSLETTER</a>
+                            <a href="#">ABOUT</a>
+                        </div>
+                    </div>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </nav>
     </header>
 
     <main id="product-list">
@@ -186,7 +197,7 @@
                                 <img class="book-icon" src="" alt="book icon">
                                 <img class="ebook-icon" src="" alt="ebook icon">
                             </div>
-                            <p class="price"></p>
+                            <p class="product-price"></p>
                         </div>
                     </div>
                 </template>
@@ -197,9 +208,36 @@
 
     </main>
 
-    <footer></footer>
+    <footer>
+        <img class="logo-footer" src="assets/nav-assets/mindspace_logo1.svg" alt="logo">
+        <div id="footercontainer">
+        <div class="footerinfoandadress"> <p>Ryesgade 77, th.</p>
+            <p>2100 København Ø,</p>
+            <p>Denmark </p></div>
+            <div class="footerinfoandadress">    
+        <p>+45 26 16 84 81</p>
+        <p>@forlagetmindspace.dk</p>
+            </div>
+        <ul class="ul1">Links<li><a href="product-list.html">Books</a></li>
+            <li><a href="">E-books</a></li>
+            <li><a href="">Authors</a></li>
+            </ul>
+            <ul class="ul2">
+                
+            <li><a href="">Shipping and returns</a></li>
+            <li><a href="">Payment and delivery</a></li>
+            <li><a href="">Help</a></li>
+        </ul>
+    </div>
+    <div id="footerend">
+    <p>Copyright © 2022 </p>
+    <img class="instagramlogo" src="assets/icons/instagramlogo.png" alt="instagramlogo">
+    <img class="fblogo" src="assets/icons/fblogo.png" alt="fblogo">
+</div>
+    </footer>
 
     <script src="script/product-list.js"></script>
+    <script src="js/hamburger.js"></script>
     
 </body>
 </html>

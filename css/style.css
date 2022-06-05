@@ -230,7 +230,7 @@ b {
     margin: auto;
     display: grid;
     grid-template-columns: 18vw 60vw;
-    grid-template-rows: 5vw 90vw;
+    grid-template-rows: 8vw 1fr;
 }
 
 /* sorting */
@@ -424,13 +424,16 @@ option:checked {
     cursor: pointer;
 }
 
-.title {
+h3.title {
     margin-top: 5%;
     font-family: var(--body-font);
     font-weight: 900;
-    font-size: 1.3vw;
+    font-size: 1vw;
     color: var(--secondary-color);
     cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 a, a:active, a:visited {
@@ -438,10 +441,10 @@ a, a:active, a:visited {
 }
 
 
-.author {
+.book-card h4.author {
     margin-top: 5%;
     font-family: var(--body-font);
-    font-size: 1vw;
+    font-size: 0.8vw;
     color: #737D80;
     cursor: pointer;
 }
@@ -454,7 +457,7 @@ a, a:active, a:visited {
     justify-content: space-between;
 }
 
-p.price {
+p.product-price {
     font-weight: 900;
     font-family: var(--body-font);
     font-size: 1.2vw;
