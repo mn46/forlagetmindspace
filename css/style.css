@@ -198,8 +198,11 @@ p {
     font-size: var(--body-size);
     font-weight: 300;
 }
+.HPevents {
+    margin: 0 10%;
+}
 .HPevent {
-    width: 70vw;
+    width: 80vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100%;
@@ -211,15 +214,17 @@ background-repeat: no-repeat;
 background-position-y: center;
 background-size: cover;
 }
-.HPeventinfo {
-    height: 400px;
-}
 .HPeventtxt {
     margin: 80px;
+    display: grid;
+    gap: 40px;
 }
 .HPtopbook {
     display: grid;
+    gap: 150px;
     grid-template-columns: 1fr 1fr;
+    margin-left: 10%;
+    margin-right: 15%;
 }
 .HPreviewpt1 {
     display: flex;
@@ -283,10 +288,31 @@ background-size: cover;
     color: var(--secondary-color);
     text-transform: uppercase;
     padding: 15px 30px;
+    justify-self: end;
 }
 .readmorebutton:hover {
     background-color: var(--secondary-color);
     color: white;
+}
+.HPtopbooktxt {
+    margin-top: 20px;
+    display: grid;
+    gap: 10px;
+}
+.HPtopbooktxt .readmorebutton {
+margin-top: 40px;
+}
+.HPbookinfo img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover
+}
+.HPtoprated {
+    background-color: var(--pale-secondary);
+    padding-bottom: 100px;
+}
+.HPreviews {
+display: grid;
 }
 .HPreviewpt1 {
     margin-bottom: 20px;
@@ -295,8 +321,11 @@ background-size: cover;
     width: 70px;
     margin-right: 20px;
 }
-.r2 {
-    margin: 20px 0;
+.HPline {
+    border-bottom: 1px solid var(--almost-black);
+}
+.HPr {
+margin: 80px 0;
 }
 /* home banner */
 
