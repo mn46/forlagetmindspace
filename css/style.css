@@ -205,7 +205,6 @@ b {
     column-span: all;
     justify-self: end;
     position: relative;
-    /* grid-area: 1 / 2 / 2 / 3; */
 }
 
 .icon {
@@ -307,6 +306,33 @@ label {
     cursor: text;
 }
 
+.authors-scroll {
+    margin-top: 9%;
+    width: 80%;
+}
+
+select#authors {
+    width: 80%;
+    border: none;
+}
+
+#authors::-webkit-scrollbar {
+    width: 0.3vw;
+}
+
+#authors::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+}
+
+#authors::-webkit-scrollbar-track {
+    width: 0.3vw;
+    background-color: #F0D6CF;
+}
+
+#authors option {
+    margin-bottom: 6%;
+    font-family: var(--headings-font);
+}
 
 /* product displayed on product list */
 

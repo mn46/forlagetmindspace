@@ -46,22 +46,58 @@ function showBook(books) {
 
     bookClone.querySelector(".product-link").href = ''
 
-    bookClone.querySelector(".ebook-icon").addEventListener("click", ebookActive)
-    
-    function ebookActive() {
-        bookClone.querySelector("img.ebook-icon").src = "http://mnowak.dk/forlagetmindspace/assets/icons/ebook-active.svg";
-        bookClone.querySelector("img.book-icon").src = "http://mnowak.dk/forlagetmindspace/assets/icons/book.svg";
-        bookClone.querySelector(".price").textContent = "DKK " + books.ebook_price;
-    }
-
-    bookClone.querySelector(".book-icon").addEventListener("click", bookActive)
-
-    function bookActive() {
-        bookClone.querySelector("img.book-icon").src = 'http://mnowak.dk/forlagetmindspace/assets/icons/book-active.svg';
-        bookClone.querySelector("img.ebook-icon").src = "http://mnowak.dk/forlagetmindspace/assets/icons/ebook.svg";
-        bookClone.querySelector(".price").textContent = "DKK " + books.price;
-    }
-
     document.querySelector(".all-products").appendChild(bookClone);
+
+}
+
+
+
+// document.querySelector(".ebook-icon").addEventListener("click", ebookActive)
+
+//     function ebookActive() {
+//         document.querySelector("img.ebook-icon").src = "http://mnowak.dk/forlagetmindspace/assets/icons/ebook-active.svg";
+//         document.querySelector("img.book-icon").src = "http://mnowak.dk/forlagetmindspace/assets/icons/book.svg";
+//         document.querySelector(".price").textContent = "DKK " + books.ebook_price;
+//     }
+
+//     document.querySelector(".book-icon").addEventListener("click", bookActive)
+
+//     function bookActive() {
+//         document.querySelector("img.book-icon").src = 'http://mnowak.dk/forlagetmindspace/assets/icons/book-active.svg';
+//         document.querySelector("img.ebook-icon").src = "http://mnowak.dk/forlagetmindspace/assets/icons/ebook.svg";
+//         document.querySelector(".price").textContent = "DKK " + books.price;
+//     }
+
+// fetching the data - authors
+
+
+let authors_url = 'http://mnowak.dk/wp-mindspace/wp-json/wp/v2/book_author?per_page=100'
+
+fetch(authors_url)
+    .then(function(res) {
+        return res.json();
+    })
+    
+    .then(function(data) {
+        authordataReceived(data);
+        console.log(data)
+})
+
+
+function authordataReceived(data) {
+    data.forEach(showAuthor);
+}
+
+function showAuthor(authors) {
+
+    const authorTemplate = document.querySelector("#author-name").content
+
+    authorClone = authorTemplate.cloneNode(true);
+
+    authorClone.querySelector("option").value = authors.book_author;
+
+    authorClone.querySelector("option").textContent = authors.book_author;
+
+    document.querySelector("select#authors").appendChild(authorClone);
 
 }
