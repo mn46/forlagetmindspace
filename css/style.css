@@ -487,12 +487,15 @@ h3 {
   overflow: hidden;
   transition: 0.2s ease-in;
   position: absolute;
-  z-index: 99999;
+  z-index: 1;
+  border: 1px solid black;
+  padding-left: 30px;
 }
 
 #touch:checked ~ .info {
   display: block;
-  height: 100%;
+  height: 140px;
+  background-color: white;
 }
 
 
@@ -631,6 +634,7 @@ h3 {
 
 .product-details-about-card {
     grid-column: 1/3;
+    padding-left: 0;
 }
 
 .product-details-about-card li {
@@ -756,9 +760,16 @@ h6 {
     }
 
     .meettheauthor {
+        grid-template-columns: 50% 50%;
         column-gap: 1%;
         padding: 5%;
     }
+
+    .meettheauthor img {
+        height: 50%;
+        
+    }
+
 }
 
 
