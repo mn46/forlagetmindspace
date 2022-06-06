@@ -103,3 +103,14 @@ function showAuthor(authors) {
     document.querySelector("select#authors").appendChild(authorClone);
 
 }
+
+// dropdown filters on mobile
+
+function showFilters() {
+    document.querySelector(".filters").classList.toggle("show-filters");
+    document.querySelector(".filters-dropdown").classList.toggle("dropdown-active");
+}
+
+document.querySelector(".filters-dropdown").addEventListener("click", showFilters);
+
+

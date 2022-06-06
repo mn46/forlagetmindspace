@@ -1565,7 +1565,7 @@ footer ul li {
 
     }
 
-    /* product page */
+    /* product list */
 
     #products-grid {
         margin-top: 15%;
@@ -1583,70 +1583,62 @@ footer ul li {
         height: 100%;
     }
 
-    /* .icon {
-         width: 1.5vw;
-         height: auto;
-    } */
-
     #sort-button {
         font-family: var(--headings-font);
         width: 100%;
         height: 100%;
     }
 
-    /* .icon-sort, .icon-arrow {
-        width: 1vw;
-        height: auto;
-    } */
-
     .sort {
-        font-family: var(--headings-font);
-        font-size: 3vw;
-        width: 100%;
-        height: 100%;
-        /* -webkit-appearance: none;
-        border: 2px solid var(--blue-colorstroke);
-        border-radius: 5%;
-        background-color: #fff;
-        cursor: pointer; */
-        /* z-index: -1; */
+      padding-left: 5%;
+      font-family: var(--headings-font);
+      font-size: var(--heading2-size);
+      font-weight: 600;
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+        /* -webkit-appearance: none; */
     }
 
     .sort:active {
         font-size: 3vw;
         width: 100%;
         height: 100%;
-        /* -webkit-appearance: none;
-        border: 2px solid var(--blue-colorstroke);
-        border-radius: 5%;
-        background-color: #E5F1F3; */
+        /* -webkit-appearance: none; */
     }
 
     .sort:hover {
         width: 100%;
         height: 100%;
-        /* -webkit-appearance: none;
-        border: 2px solid var(--blue-colorstroke);
-        border-radius: 5%; */
-        /* background-color: #E5F1F3; */
+        /* -webkit-appearance: none; */
     }
 
     /* filters */
 
     #filters-form {
-        grid-area: 1 / 1 / span 1 / span 1;
-        display: flex;
-        flex-direction: column;
+      grid-area: 1 / 1 / span 1 / span 1;
     }
 
     .filters-dropdown {
-        padding: 1.5vw;
-        border: 1px solid var(--blue-colorstroke);
+      padding: 1vw;
+      border: 2px solid var(--blue-colorstroke);
     }
 
     .dropdown-tag {
-        display: flex;
-        flex-direction: row;
+      width: 100%;
+      height: 5.3vw;
+    }
+
+    .dropdown-tag h2 {
+      margin-left: 5%;
+      font-size: var(--heading2-size);
+      font-weight: 600;
+    }
+
+    .dropdown-tag .icon {
+      margin-left: 5%;
+      width: 3vw;
+      height: auto;
     }
 
     .filters {
@@ -1654,7 +1646,33 @@ footer ul li {
     }
 
     .filters h3 {
-        margin: 13% 0 3% 0;
+        margin: 13% 0 3% 5%;
+        font-size: 4vw;
+    }
+
+    .input, .author-search, .authors-scroll {
+      margin-left: 5%;
+    }
+
+    .checkbox {
+      width: 5vw;
+    }
+
+    .author-search {
+      margin-right: 5%;
+    }
+
+    .author-search .icon {
+      margin-right: 5%;
+      width: 5vw;
+    }
+
+    #authors::-webkit-scrollbar {
+      width: 2vw;
+    }
+   
+    #authors::-webkit-scrollbar-track {
+      width: 2vw;
     }
 
 
@@ -1670,6 +1688,85 @@ footer ul li {
     .book-card {
         width: 35vw;
         height: auto;
-        margin-bottom: 8%;
+        margin-bottom: 14%;
     }
+
+    .below-image {
+      position: relative;
+      height: 4vw;
+      display: flex;
+      justify-content: center;
+      /* padding: 2% 0;
+      margin: 0;
+      /* align-items: center;
+      justify-items: center;
+      border: 1px solid var(--blue-colorstroke); */
+    }
+  
+    .book-genre {
+      padding-right: 0%;
+      font-size: 2.3vw;
+      text-align: center;
+      border-right: none;
+    }
+  
+    .favourites, .buy {
+      width: 6vw;
+      background-color: #fff;
+      height: auto;
+      /* cursor: pointer; */
+    }
+
+    .buy {
+      padding: 2%;
+      border: 2px solid var(--blue-colorstroke);
+      position: absolute;
+      top: -40.6vw;
+      left: 26.9vw;
+    }
+
+    .favourites {
+      padding: 2%;
+      border: 2px solid var(--blue-colorstroke);
+      position: absolute;
+      top: -32.4vw;
+      left: 26.9vw;
+    }
+  
+    h3.title {
+      margin-top: 7%;
+      font-size: 3.5vw;
+    }  
+  
+    .book-card h4.author {
+      font-size: 2.4vw;
+    }
+  
+    .price-card {
+      margin-top: 7%;
+    }
+
+    .book-icon, .ebook-icon {
+      width: 5.5vw;
+      height: auto;
+    }
+  
+    p.product-price {
+      font-size: 3.3vw;
+    }
+
+    /* classes for creating dropdown in JS */
+
+    .show-filters {
+      display: block;
+      background-color: #fff;
+      width: 80vw;
+    }
+
+    .dropdown-active {
+      width: 80vw;
+      z-index: 3;
+      background-color: #fff;
+    }
+
 }
