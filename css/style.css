@@ -194,10 +194,24 @@ a, a:visited, a:active {
 }
 
 /* home page */
+.HPtopbooktxt h1 {
+    font-family: var(--body-font);
+}
+.h1title {
+    color: var(--secondary-color);
+}
+.h1author {
+    font-family: var(--body-font);
+    font-size: 1rem;
+    color: #737D80;
+    font-weight: 200;
+    margin-top: 0.3rem;
+}
 .HPbanner {
     background-image: url(/assets/drommemaskine.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     padding: 3%;
@@ -222,18 +236,27 @@ a, a:visited, a:active {
 }
 #home-main p {
     font-family: var(--body-font);
-    font-size: var(--body-size);
+    font-size: 0.8rem;
     font-weight: 300;
     line-height: 1.5rem;
+}
+#home-main p.b {
+    font-weight: 500;
+}
+#home-main .price {
+    margin-top: 0;
+    text-align: end;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
 .HPeventsgrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     overflow-x: auto;
-    padding-top: 20px;
     padding-bottom: 30px;
     margin: 0 80px;
     margin-bottom: 50px;
+    padding-top: 20px;
 }
 .HPevent {
     /* width: 80vw; */
@@ -300,6 +323,33 @@ background-size: cover;
 .HPcard .book-image {
     width: 100%;
 }
+/* 
+.HPoverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+.overlaytext {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+.container:hover .HPoverlay {
+    opacity: 1;
+  } */
 .HPcard .below-image {
     display: flex;
     justify-content: space-between;
@@ -381,6 +431,7 @@ margin-top: 0.5rem;
     gap: 20px;
     margin: 60px;
     margin-top: 0;
+    text-align: center;
 }
 .HPcategorybutt {
     background-color: var(--blue-color);
@@ -1068,6 +1119,11 @@ h6 {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     padding: 20px 80px;
+    align-items: center;
+}
+#home-main p.NLp {
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 .NLgrid {
     display: grid;
@@ -1087,6 +1143,10 @@ h6 {
     font-family: var(--body-font);
     font-weight: 300;
 }
+.newsletter img {
+    width: 100%;
+    height: auto;
+}
 
 /* footer */
 footer {
@@ -1096,6 +1156,9 @@ footer {
   font-weight: 100;
   font-size: 0.7rem;
   color: var(--black);
+}
+footer p {
+    text-align: center;
 }
 
 #footercontainer {
@@ -1139,6 +1202,56 @@ footer ul li {
 }
 
 /* media queries  */
+@media only screen and (min-width: 2560px) {
+    .HPh3 {
+    font-size: 3rem;
+    }
+    .HPevent {
+        grid-template-columns: 30vw 20vw;
+    }
+    .HPbanner {
+    height: 25vh;
+    }
+    .HPbanner h1 {
+        font-size: 3vh;
+        line-height: 4vh;
+    }
+    .HPbanner h1::before {
+    margin-top: -5%;
+    height: 15%;
+    }
+    .HPbanner .readmorebutton {
+        margin-top: -20px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .HPh3 {
+    font-size: 2.3rem;
+    }
+    .HPevent {
+        grid-template-columns: 30vw 25vw;
+    }
+    .NLgrid {
+    gap: 40px;
+    }
+    .newsletter img {
+        width: 70%;
+    }
+    .newsletter {
+        justify-items: center;
+    }
+    .HPtopbook .ratings {
+        width: 20%;
+    }
+    #home-main p.b {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+    
 @media only screen and (max-width: 1361px) {
 
     .product {
@@ -1188,8 +1301,122 @@ footer ul li {
         column-gap: 1%;
         padding: 5%;
     }
-}
+    .HPbanner h1 {
+        font-size: 4.5vh;
+        line-height: 7vh;
+    }
+    .HPh3 {
+        font-size: 1.5rem;
+        padding: 60px 20px;
+    }
+    #home-main .price {
+        font-size: 1rem;
+    }
+    .HPtoprated .ratings img {
+        width: 10%;
+    }
+    .HPtopbook .ratings {
+        width: 100%;
+    }
+    .HPtopbook {
+        gap: 50px;
+        grid-template-columns: 1.5fr 1fr;
+    }
+    .newsletter {
+        grid-template-columns: 1fr 2fr;
+    }
+    .NLgrid {
+        gap: 20px;
+    }
+    .HPbanner {
+        height: 50vh;
+    }
+    }
+    .HPbanner h1 {
+        font-size: 4vh;
+        line-height: 7vh;
+    }
 
+
+@media only screen and (max-width: 768px) {
+    .newsletter {
+        padding: 20px 40px;
+    }
+    .NLgrid {
+        padding: 40px;
+    }
+    .HPtopbook {
+        grid-template-columns: 1fr;
+        gap: 0;
+        margin-left: 15%;
+    }
+    .HPr {
+        margin: 30px 0;
+    }
+    .HPbookinfo .ratings img {
+        width: 5%;
+        height: auto;
+    }
+    .HPevent {
+        grid-template-columns: 50vw;
+    }
+    .HPeventimg {
+        height: 30vh;
+    }
+    .HPeventsgrid {
+        gap: 20px;
+    }
+    #home-main h2 {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+    .HPeventtxt {
+        margin: 40px;
+    }
+    .eventTag {
+        margin-top: -60px;
+    }
+    .HPh3 {
+        font-size: 1.3rem;
+    }
+    .HPscroll {
+        margin: 0 40px;
+    }
+    img.HPauthorImg {
+        width: 150px;
+        height: 150px;
+    }
+    .HP-nr-of-books {
+        width: 150px;
+    }
+    .HPauthor-card {
+        padding: 1rem;
+    }
+    .HPauthorsScroll {
+        gap: 20px;
+        margin: 0 40px;
+    }
+    .HPevent {
+        grid-template-columns: 40vw;
+    }
+    .HPeventtxt {
+        gap: 20px;
+    }
+    #home-main h2 {
+        margin-top: 0;
+    }
+    .HPbanner {
+        height: 40vh;
+    }
+    .HPbanner h1 {
+        font-size: 3.5vh;
+        line-height: 6vh;
+    }
+    .HPbanner {
+        background-image: url(/assets/drommemaskine-s.jpg);
+        background-size: cover;
+    }
+}
 
 @media only screen and (max-width: 768px) {
     
@@ -1283,6 +1510,151 @@ footer ul li {
         justify-content: center;
         max-width: 100%;
     }
+}
+
+@media only screen and (max-width: 425px) {
+    .HPh3 {
+        font-size: 1rem;
+        line-height: 1.8rem;
+        padding: 30px 20px;
+    }
+    .sectionTag {
+        left: 20px;
+    }
+    .HPscroll {
+        margin: 0 20px;
+        gap: 20px;
+    }
+    .HPcard {
+        width: 150px;
+    }
+    .HPcategorybutt {
+        font-size: 1rem;
+    }
+
+    .HPcategorylist {
+    gap: 10px;
+    }
+    .HPauthorsScroll {
+    gap: 10px;
+    margin: 0 20px;
+    }
+    img.HPauthorImg {
+        width: 120px;
+        height: 120px;
+    }
+    .HP-nr-of-books {
+        width: 120px;
+    }
+    .HPeventsgrid {
+        margin: 0 20px;
+    }
+    .HPevent {
+        grid-template-columns: 80vw;
+    }
+    .HPtopbooktxt .readmorebutton {
+        margin-top: 0;
+    }
+    .HPreviews {
+        margin-top: 80px;
+    }
+    .HPtopbook {
+    margin: 0 20px;
+    }
+    .HPtoprated {
+        padding-bottom: 10px;
+    }
+    .newsletter {
+        grid-template-columns: 1fr;
+        padding: 20px 20px;
+        justify-items: center;
+    }
+    .newsletter img {
+        width: 60%;
+        height: auto;
+    }
+    .NLgrid {
+        padding: 0;
+    }
+    #footercontainer {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .footerinfoandadress {
+        align-items: center;
+        padding: 20px 0;
+    }
+    footer ul {
+        align-items: center;
+        padding: 0;
+    }
+    .ul1, .ul2 {
+    padding-top: 20px;
+    }
+    #footerend {
+        align-items: center;
+    }
+    #home-main .HP-author-name {
+        font-size: 0.8rem;
+        line-height: 1rem;
+        margin-top: 0.5rem;
+    }
+    .ratings {
+        width: 30%;
+    }
+    #home-main .ratings p, #home-main .HP-nr-of-books p {
+        font-size: 0.6rem;
+    }
+    .readmorebutton, .signupbutton {
+        font-size: 0.8rem;
+        padding: 10px 20px;
+    }
+    .HPbanner {
+        height: 30vh;
+    }
+    .HPbanner h1 {
+        font-size: 2.3vh;
+        line-height: 4vh;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .HPcategorylist a {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    .HPcategorylist {
+    margin: 20px;
+    margin-top: 0;
+    gap: 5px;
+    }
+    .HPcard {
+        width: 40vw;
+    }
+    .HPscroll {
+        gap: 15px;
+    }
+    #home-main h2 {
+        font-size: 1.2rem;
+    }
+    #home-main p {
+        font-family: var(--body-font);
+        font-size: 0.7rem;
+        font-weight: 300;
+        line-height: 1.2rem;
+    }
+    .HPbanner {
+        height: 30vh;
+    }
+    .HPbanner h1 {
+        font-size: 2vh;
+        line-height: 3vh;
+    }
+    .HPbanner .readmorebutton {
+        margin-top: 10%;
+    }
+}
 
 
     /* font sizes */
@@ -1646,5 +2018,3 @@ footer ul li {
         width: 80%;
 
     }
-
-}
