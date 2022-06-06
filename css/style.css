@@ -727,6 +727,31 @@ h6 {
 }
 
 
+/* more books  */
+
+.HPnew {
+    position: relative;
+    background-color: var(--pale-secondary);
+    padding-bottom: 20px;
+}
+.HPscroll {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    overflow-x: auto;
+    padding-top: 20px;
+    margin: 0 80px;
+    gap: 40px;
+}
+.HPcard {
+    margin-top: 20px;
+    width: 200px;
+}
+.HPcard .book-image {
+    width: 100%;
+}
+
+
+
 
 /* media queries  */
 @media only screen and (max-width: 1361px) {
