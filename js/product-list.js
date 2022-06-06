@@ -38,6 +38,7 @@ function showBook(books) {
 
     bookClone.querySelector(".author").textContent = books.book_author;
 
+
     if (books.printed == 1) {
         bookClone.querySelector(".book-icon").src = 'http://mnowak.dk/forlagetmindspace/assets/icons/book-active.svg';
         bookClone.querySelector(".ebook-icon").src = 'http://mnowak.dk/forlagetmindspace/assets/icons/ebook.svg';
@@ -48,31 +49,28 @@ function showBook(books) {
         bookClone.querySelector(".product-price").textContent = "DKK " + books.ebook_price;
     }
 
-    // bookClone.querySelector(".author").textContent = books.book_author;
-
-    // bookClone.querySelectorAll(".product-link").href = 'product-page.html?id=' + books.id;
-
     document.querySelector(".all-products").appendChild(bookClone);
 
 }
 
 
 
-// document.querySelector(".ebook-icon").addEventListener("click", ebookActive)
+// document.querySelector(".book-ebook").addEventListener("click", ebookActive);
 
 //     function ebookActive() {
-//         document.querySelector("img.ebook-icon").src = "http://mnowak.dk/forlagetmindspace/assets/icons/ebook-active.svg";
+//         this.src = "http://mnowak.dk/forlagetmindspace/assets/icons/ebook-active.svg";
 //         document.querySelector("img.book-icon").src = "http://mnowak.dk/forlagetmindspace/assets/icons/book.svg";
 //         document.querySelector(".price").textContent = "DKK " + books.ebook_price;
 //     }
 
-//     document.querySelector(".book-icon").addEventListener("click", bookActive)
+//     document.querySelector(".book-icon").addEventListener("click", bookActive);
 
 //     function bookActive() {
 //         document.querySelector("img.book-icon").src = 'http://mnowak.dk/forlagetmindspace/assets/icons/book-active.svg';
 //         document.querySelector("img.ebook-icon").src = "http://mnowak.dk/forlagetmindspace/assets/icons/ebook.svg";
 //         document.querySelector(".price").textContent = "DKK " + books.price;
 //     }
+
 
 // fetching the data - authors
 
