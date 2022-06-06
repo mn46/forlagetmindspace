@@ -209,6 +209,9 @@ b {
 }
 
 .breadcrumbs a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: black;
     font-family: var(--body-font);
@@ -226,6 +229,7 @@ b {
 
 .breadcrumbs svg {
     width: 15px;
+    margin-bottom: 5px;
 }
 
 /* product */
@@ -565,6 +569,8 @@ h3 {
 }
 
 .reviewtext {
+    line-height: 1.8;
+    letter-spacing: 0.03rem;
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 2rem;
@@ -590,6 +596,8 @@ h3 {
     font-weight: 200;
     line-height: 1.8;
     margin-bottom: 1rem;
+    line-height: 1.8;
+    letter-spacing: 0.03rem;
 }
 
 
@@ -704,11 +712,18 @@ h6 {
 }
 
 .abouttheauthor-text p{
+    line-height: 1.8;
+    letter-spacing: 0.03rem;
     height: 100%;
     margin-top: auto;
     font-weight: 200;
     line-height: 1.5;
     margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.abouttheauthor-text a {
+    color: black;
 }
 
 
@@ -755,25 +770,37 @@ h6 {
         align-items: center;
     }
 
+    
     .information-about {
         width: 50%;
     }
 
     .meettheauthor {
-        grid-template-columns: 50% 50%;
-        column-gap: 1%;
+        display: flex;
+        flex-direction: column;
         padding: 5%;
+        
     }
 
-    .meettheauthor img {
-        height: 50%;
-        
+    .image-for-author{
+       width: 50%;
+       margin-bottom: 2%;
+    }
+
+    .author-content {
+        margin-bottom: 8%;
+
+    }
+
+    .stars-author {
+        margin-bottom: 1%;
     }
 
 }
 
 
 @media only screen and (max-width: 768px) {
+
     
 
     /* .menu-button-container {
@@ -795,15 +822,15 @@ h6 {
 
     /* font sizes */
 
-    .genre ,.product-details-about-card li{
+    .genre ,.product-details-about-card li, .date-of-birth, .abouttheauthor-text p, .abouttheauthor-text a{
         font-size: var(--heading2-mobile);
     }
     
-    .name-of-book {
+    .name-of-book, .meettheauthor-name {
         font-size: var(--heading1-mobile);
     }
     
-    .author-of-book {
+    .author-of-book, .work a, .work {
         font-size: var(--heading2-mobile);
         font-weight: 300;
         color: #737D80;
@@ -886,6 +913,12 @@ h6 {
         margin-left: 0;
     }
 
+    .breadcrumbs {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+
     .hamburgerlinks {
         position: relative; 
         top: 50px;
@@ -948,7 +981,7 @@ h6 {
     
 
     
-    h4, h5, h6{
+    .lr, h4, h5, h6{
         font-size: var(--heading1-mobile);
     }
 
@@ -1002,6 +1035,7 @@ h6 {
     .review {
         margin: 3%;
         column-gap: 1%;
+        padding: 5%;
     }
 
     .reviewer {
