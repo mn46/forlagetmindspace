@@ -34,7 +34,7 @@
                     <a href="#" class="dropbtn">BOOKS <i class="arrow down"></i> </a>
                         <div class="dropdown-content">
                           <a href="#"><b>Newly Published</b></a>
-                          <a href="#"><b>All</b></a>
+                          <a href="product-list.html"><b>All</b></a>
                           <a href="#">Philosophy</a>
                           <a href="#">Phychology</a>
                           <a href="#">Pedagogy</a>
@@ -116,9 +116,11 @@
             
             <!-- <button class="buyorlike"></button> -->
             <div class="about">
-                <h3>About</h3>
+                <div class="about-text">
+                    <h3>About</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis ante a erat vehicula, et ornare magna gravida. Donec imperdiet orci metus, sit amet rutrum orci consectetur non. Mauris dolor magna, varius et consequat ut, malesuada et magna. Donec a lobortis nunc, at lacinia velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-                <a href="#">read more</a> 
+                <a href="#">READ MORE</a> 
+                </div>
             <div class="book-info">
                 <div class="buttons">
                     <div class="versions-of-book">
@@ -210,7 +212,7 @@
         </section>
         <h6>Meet the author</h6>
         <section class="meettheauthor">
-                <img src="assets/placeholders/author.svg" alt="author">
+                <img class="image-for-author" src="assets/placeholders/author.svg" alt="author">
                 <div class="p">
             <div class="author-content">
                  <p class="meettheauthor-name">John Shotter</p>
@@ -232,19 +234,37 @@
             </div>
             <div class="abouttheauthor-text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque vivamus ut platea nec proin phasellus. A sociis donec eget ultrices dui, adipiscing. Phasellus ut tincidunt amet felis arcu, consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque vivamus ut platea nec proin phasellus. A sociis donec eget ultrices dui, adipiscing. Phasellus ut tincidunt amet felis arcu, consequat...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque vivamus ut platea nec proin phasellus. A sociis donec eget ultrices dui, adipiscing. Phasellus ut tincidunt amet felis arcu, consequat.</p>
-                <a href="#">read more</a>
+                <a href="#">READ MORE</a>
             </div>
             </div>
         </section>
-        <section class="more-books">
-            <template class="more-books-template">
-                <div class="book-card">
-                    <img src="" alt="">
-                    <p></p>
-                    <p class="author"></p>
-                    <p class="price"></p>
-                </div>
-            </template>
+        <section class="HPnew">
+            <div class="sectionTag red">New Arrivals</div>
+            <div class="HPscroll">
+                <template id="book-card-template">
+                    <div class="book-card HPcard">
+                        <a class="product-link" href="" aria-label="go to product page"><img class="book-image"
+                                src="" alt=""></a>
+                        <div class="below-image">
+                            <span class="book-genre"></span>
+                            <img class="favourites" src="assets/icons/add-favourites.svg"
+                                alt="add to favourites icon">
+                            <img class="buy" src="assets/icons/bag.svg" alt="bag icon">
+                        </div>
+                        <a class="product-link" href="" aria-label="go to product page">
+                            <h3 class="title"></h3>
+                        </a>
+                        <h4 class="author"></h4>
+                        <div class="price-card">
+                            <div class="book-ebook">
+                                <img class="book-icon" src="assets/icons/book.svg" alt="book icon">
+                                <img class="ebook-icon" src="assets/icons/ebook.svg" alt="">
+                            </div>
+                            <p class="price"></p>
+                        </div>
+                    </div>
+                </template>
+            </div>
         </section>
     </main>
     <footer>
@@ -277,5 +297,6 @@
     <script src="js/counter.js"></script>
     <script src="js/hamburger.js"></script>
     <script src="js/single-product.js"></script>
+    <script src="js/homepage.js"></script>
 </body>
 </html>
