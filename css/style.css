@@ -1702,6 +1702,12 @@ footer ul li {
     .stars-author {
         margin-bottom: 1%;
     }
+    .HPh3 {
+        font-size: 1.5rem;
+    }
+    .NLgrid {
+        gap: 40px;
+    }
 
 }
 
