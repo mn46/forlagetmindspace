@@ -653,6 +653,20 @@ img.HPauthorImg {
     grid-template-rows: 8vw 1fr;
 }
 
+.price {
+    font-family: var(--body-font);
+    text-align: end;
+}
+
+.HPprice-card .price {
+    margin-bottom: 20px;
+}
+
+.stars-author {
+    display: flex;
+    width: 5%;
+}
+
 /* sorting */
 
 #sorting-form {
@@ -1002,7 +1016,7 @@ p.product-price {
   height: 100%;
 }
 
-.price {
+.price-for-book {
   font-size: var(--heading1-size);
   font-weight: 400;
   margin-top: 3rem;
@@ -1433,7 +1447,7 @@ h3 {
   font-weight: 200;
 }
 
-h6 {
+h6, .mba {
   font-size: var(--heading2-size);
   font-family: var(--headings-font);
   font-weight: 400;
@@ -1576,6 +1590,13 @@ footer ul li {
 }
 
 
+.HPnew-pp {
+    position: relative;
+    background-color: var(--pale-blue);
+    padding-bottom: 20px;
+    margin-bottom: 10%;
+}
+
 
 
 /* media queries  */
@@ -1712,9 +1733,8 @@ footer ul li {
 }
 
 
-@media only screen and (max-width: 768px) {
-
-    .HPbanner h1 {
+@media only screen and (max-width: 768px)  {
+.HPbanner h1 {
         font-size: 4.5vh;
         line-height: 7vh;
     }
@@ -1744,11 +1764,14 @@ footer ul li {
     .HPbanner {
         height: 50vh;
     }
-    }
+
     .HPbanner h1 {
         font-size: 4vh;
         line-height: 7vh;
     }
+}
+
+    
 
 
 @media only screen and (max-width: 768px) {
@@ -1833,22 +1856,6 @@ footer ul li {
 
 @media only screen and (max-width: 768px) {
     
-
-    /* .menu-button-container {
-  /* .menu-button-container {
-        display: flex;
-        justify-content: end;
-        align-items: center;
-    } */
-
-  /* .nav-links dropdown-books, .menu-button-container{
-        display: inline-flex;
-        justify-content: space-between;
-        
-    } */
-
-  /* #menu-toggle ~ .nav-links:not(:first-child) {
-    } */
 
     .hamburger {
         display: block;
@@ -2030,44 +2037,6 @@ footer ul li {
         font-size: 2.3vh;
         line-height: 4vh;
     }
-}
-
-@media only screen and (max-width: 320px) {
-    .HPcategorylist a {
-        width: 100%;
-        font-size: 0.8rem;
-    }
-    .HPcategorylist {
-    margin: 20px;
-    margin-top: 0;
-    gap: 5px;
-    }
-    .HPcard {
-        width: 40vw;
-    }
-    .HPscroll {
-        gap: 15px;
-    }
-    #home-main h2 {
-        font-size: 1.2rem;
-    }
-    #home-main p {
-        font-family: var(--body-font);
-        font-size: 0.7rem;
-        font-weight: 300;
-        line-height: 1.2rem;
-    }
-    .HPbanner {
-        height: 30vh;
-    }
-    .HPbanner h1 {
-        font-size: 2vh;
-        line-height: 3vh;
-    }
-    .HPbanner .readmorebutton {
-        margin-top: 10%;
-    }
-}
 
     .dropdown-books:active .dropdown-content {
         display: block;
@@ -2094,8 +2063,8 @@ footer ul li {
         color: #737D80;
     }
 
-    .price {
-        font-size: 0.938rem;
+    .price-for-book {
+        font-size: var(--body-mobile);
         margin-top: 0;
     }
     
@@ -2149,11 +2118,7 @@ footer ul li {
         content: '.like-mobile';
     }
 
-    .hamburger {
-        display: block;
-       
-        margin-right: 2.5rem;
-    }
+    
   /* font sizes */
 
   .genre {
@@ -2171,7 +2136,7 @@ footer ul li {
     margin-bottom: 1rem;
   }
 
-  .price {
+  .price-for-book {
     font-size: 0.938rem;
     margin-top: 0;
   }
@@ -2293,7 +2258,7 @@ footer ul li {
     
 
     
-    .lr, h4, h5, h6{
+    .lr, h4, h5, h6, .mba{
         font-size: var(--heading1-mobile);
     }
 
@@ -2528,6 +2493,7 @@ footer ul li {
     }
 
 
+
     /* product displayed on product list */
 
     .all-products {
@@ -2541,5 +2507,42 @@ footer ul li {
         width: 35vw;
         height: auto;
         margin-bottom: 8%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .HPcategorylist a {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    .HPcategorylist {
+    margin: 20px;
+    margin-top: 0;
+    gap: 5px;
+    }
+    .HPcard {
+        width: 40vw;
+    }
+    .HPscroll {
+        gap: 15px;
+    }
+    #home-main h2 {
+        font-size: 1.2rem;
+    }
+    #home-main p {
+        font-family: var(--body-font);
+        font-size: 0.7rem;
+        font-weight: 300;
+        line-height: 1.2rem;
+    }
+    .HPbanner {
+        height: 30vh;
+    }
+    .HPbanner h1 {
+        font-size: 2vh;
+        line-height: 3vh;
+    }
+    .HPbanner .readmorebutton {
+        margin-top: 10%;
     }
 }
