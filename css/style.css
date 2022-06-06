@@ -1157,7 +1157,7 @@ footer {
   font-size: 0.7rem;
   color: var(--black);
 }
-footer p {
+footer p.links {
     text-align: center;
 }
 
