@@ -48,3 +48,43 @@ function showBook(books) {
     document.querySelector(".HPscroll").appendChild(bookClone);
 
 }
+
+let authors_url = 'http://mnowak.dk/wp-mindspace/wp-json/wp/v2/book_author?per_page=100'
+
+fetch(authors_url)
+    .then(function(res) {
+        return res.json();
+    })
+    
+    .then(function(data) {
+        authordataReceived(data);
+        console.log(data)
+})
+
+function authordataReceived(data) {
+    data.forEach(showAuthor);
+}
+
+function showAuthor(author) {
+
+    const authorTemplate = document.querySelector("#HPauthor-card-template").content;
+
+    authorClone = authorTemplate.cloneNode(true);
+
+    // adding data
+
+    authorClone.querySelector("img.HPauthorImg").src = author.author_photo;
+
+    authorClone.querySelector(".HP-author-name").textContent = author.book_author;
+
+    authorClone.querySelector(".HP-author-books").textContent = author.book1;
+
+    // authorClone.querySelector(".author").textContent = books.book_author;
+
+    // authorClone.querySelector(".author").textContent = books.book_author;
+
+    // authorClone.querySelector(".product-link").href = ''
+
+    document.querySelector(".HPauthorsScroll").appendChild(authorClone);
+
+}

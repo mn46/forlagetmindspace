@@ -193,6 +193,32 @@
 }
 
 /* home page */
+.HPbanner {
+    background-image: url(/assets/drommemaskine.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    padding-left: 10%;
+    align-items: flex-start;
+}
+.HPbanner .readmorebutton {
+    margin-top: 5%;
+}
+.HPbanner h1::before {
+    content: url(/assets/parenthesis.svg);
+    display: grid;
+    margin-left: -5vw;
+    opacity: 50%;
+    mix-blend-mode: multiply;
+}
+.HPbanner h1 {
+    font-family: var(--headings-font);
+    font-size: 6vh;
+    font-weight: 300;
+    line-height: 8vh;
+}
 #home-main p {
     font-family: var(--body-font);
     font-size: var(--body-size);
@@ -216,7 +242,7 @@
     background-color: var(--pale-blue);
 }
 .HPeventimg {
-background-image: url(/assets/cyborgmanifest.webp);
+background-image: url(/assets/event-BW.webp);
 background-repeat: no-repeat;
 background-position-y: center;
 background-size: cover;
@@ -360,7 +386,7 @@ margin-top: 0.5rem;
     border: 1px solid var(--blue-colorstroke);
     font-family: var(--body-font);
     padding: 20px 25px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     color: var(--almost-black);
 }
@@ -428,43 +454,61 @@ margin: 80px 0;
 }
 #HPauthors {
     background-color: var(--pale-blue);
+    padding-bottom: 20px;
 }
 .HPauthorsScroll {
 display: flex;
 gap: 40px;
 overflow-x: auto;
-padding-top: 20px;
 padding-bottom: 30px;
 margin: 0 80px;
-margin-bottom: 50px;
 }
-#HPauthor-card-template {
+.HPauthorsScroll::-webkit-scrollbar {
+    height: 0.3vw;
+}
+.HPauthorsScroll::-webkit-scrollbar-thumb {
+    background-color: #A5C3CB;
+}
+.HPauthorsScroll::-webkit-scrollbar-track {
+    height: 0.3vw;
+    background-color: #E5F1F3;
+}
+.HPauthor-card {
     position: relative;
     background-color: white;
     padding: 2rem;
     border-radius: 1rem;
     filter: drop-shadow(0 0 0.5rem rgba(217, 217, 217, 0.2));
-    /* display: flex;
-    flex-direction: column; */
 }
 .HP-author-bookamount::after {
-    content: url("../assets/icons/author-book.svg");
+    background-image: url("../assets/icons/author-book.svg");
+    background-size: 1rem 1rem;
+    background-repeat: no-repeat;
+    background-position-y:bottom;
     display: inline-block;
-    padding-left: 0.5rem;
+    width: 1rem; 
+    height: 1rem;
+    margin-left: 0.5rem;
+    content:"";
+
 }
-.HPauthorImg {
+img.HPauthorImg {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
 }
 #home-main .HP-author-name {
-    font-size: 1.3rem;
+    font-size: 1rem;
     line-height: 1.8rem;
     font-weight: 500;
+    margin-top: 1rem;
 }
 .ratings .starblue {
-    width: 1.5rem;
+    width: 1rem;
+}
+.below-authorimage .ratings {
+    margin: 0;
 }
 .HP-author-bookamount {
     text-align: end;
@@ -476,34 +520,19 @@ margin-bottom: 50px;
     align-items: center;
     gap: 2px;
 }
+#home-main p.HP-author-books {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.8rem;
+}
+#home-main .ratings p, #home-main .HP-nr-of-books p {
+    font-size: 0.8rem;
+}
 .blueheart {
     position: absolute;
     width: 10%;
     right: 10%;
-}
-/* home banner */
-
-.banner {
-    position: relative;
-    height: 40vw;
-    background-image: url("../assets/graphics/banner.png");
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.slider-button {
-    position: absolute;
-    top: 33vw;
-    left: 8vw;
-    height: 3vw;
-    width: 12vw;
-    background-color: transparent;
-    border: 2px solid var(--secondary-color);
-    font-size: 1.5em;
-    font-weight: 600;
-    color: var(--secondary-color);
-    text-transform: uppercase;
 }
 
 /* breadcrumbs */
