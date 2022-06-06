@@ -30,6 +30,8 @@ function showBook(books) {
 
     bookClone.querySelector("h3.title").textContent = books.title.rendered;
 
+    bookClone.querySelector("a.product-link").setAttribute("href", `product-page.html?id=` + books.id);
+
     bookClone.querySelector(".author").textContent = books.book_author;
 
     if (books.printed == 1) {
