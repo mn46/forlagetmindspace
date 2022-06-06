@@ -30,7 +30,11 @@ function showBook(books) {
 
     bookClone.querySelector("h3.title").textContent = books.title.rendered;
 
-    bookClone.querySelector("a.product-link").setAttribute("href", `product-page.html?id=` + books.id);
+    // linking to product page of specific products
+
+    productLink = bookClone.querySelectorAll(".product-link");
+    productLink[0].href = 'product-page.html?id=' + books.id;
+    productLink[1].href = 'product-page.html?id=' + books.id;
 
     bookClone.querySelector(".author").textContent = books.book_author;
 
@@ -44,9 +48,9 @@ function showBook(books) {
         bookClone.querySelector(".product-price").textContent = "DKK " + books.ebook_price;
     }
 
-    bookClone.querySelector(".author").textContent = books.book_author;
+    // bookClone.querySelector(".author").textContent = books.book_author;
 
-    bookClone.querySelector(".product-link").href = ''
+    // bookClone.querySelectorAll(".product-link").href = 'product-page.html?id=' + books.id;
 
     document.querySelector(".all-products").appendChild(bookClone);
 
