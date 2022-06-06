@@ -977,6 +977,10 @@ h3 {
   background-color: var(--pale-secondary);
 }
 
+.meettheauthor a, .about a {
+    text-decoration: underline;
+}
+
 .meettheauthor img {
   grid-column: 1/2;
 }
