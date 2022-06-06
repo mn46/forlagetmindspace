@@ -586,7 +586,7 @@ h3 {
     display: grid;
     grid-template-columns: 0.6fr 1fr;
     column-gap: 2rem;
-    margin: 5rem;
+    padding: 5rem;
     font-family: var(--body-font);
 }
 
@@ -752,6 +752,7 @@ h6 {
         grid-column: 1/4;
         width: 100%;
         row-gap: 20px;
+        flex-direction: column-reverse;
     }
 
     .book-info {
@@ -759,6 +760,12 @@ h6 {
         justify-content: center;
         align-items: center;
     }
+
+    .about, .latest-reviews, .about-the-book-card, .meettheauthor {
+        margin-bottom: 10rem;
+    }
+
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -822,7 +829,9 @@ h6 {
         display: block;
     }
 
-
+    .about, .latest-reviews, .about-the-book-card, .meettheauthor {
+        margin-bottom: 2%;
+    }
 
 
     /* font sizes */
@@ -939,7 +948,6 @@ h6 {
     }
 
     .hamburgerlinks.active {
-       
         left: -50px;
     }
 
@@ -1053,13 +1061,7 @@ h6 {
         grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     }
 
-    .person {
-        font-size: var(--body-mobile);
-    }
-
-    .reviewtext {
-        
-        
+    .person, .reviewtext {
         font-size: var(--body-mobile);
     }
 
@@ -1068,7 +1070,6 @@ h6 {
         display: flex;
         flex-direction: column;
         row-gap: 1rem;
-        
     }
 
     .about-the-book-card {
@@ -1079,11 +1080,7 @@ h6 {
         align-items: center;
     }
     
-    .if .genre-about-card, .if .author-about-card, .text-about {
-        font-size: var(--body-mobile);
-    }
-
-    .product-details-about-card li {
+    .if .genre-about-card, .if .author-about-card, .text-about, .product-details-about-card li {
         font-size: var(--body-mobile);
     }
    
