@@ -818,6 +818,11 @@ h6 {
     /* #menu-toggle ~ .nav-links:not(:first-child) {
     } */
 
+    .dropdown-books:active .dropdown-content {
+        display: block;
+    }
+
+
 
 
     /* font sizes */
