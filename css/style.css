@@ -216,7 +216,7 @@ a, a:visited, a:active {
     margin-top: 0.3rem;
 }
 .HPbanner {
-    background-image: url(/assets/drommemaskine.jpg);
+    background-image: url(../assets/drommemaskine.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -230,7 +230,7 @@ a, a:visited, a:active {
     margin-top: 5%;
 }
 .HPbanner h1::before {
-    content: url(/assets/parenthesis.svg);
+    content: url(../assets/parenthesis.svg);
     display: grid;
     margin-left: -5vw;
     opacity: 50%;
@@ -274,7 +274,7 @@ a, a:visited, a:active {
     background-color: var(--pale-blue);
 }
 .HPeventimg {
-background-image: url(/assets/event-BW.webp);
+background-image: url(../assets/event-BW.webp);
 background-repeat: no-repeat;
 background-position-y: center;
 background-size: cover;
@@ -1849,7 +1849,7 @@ footer ul li {
         line-height: 6vh;
     }
     .HPbanner {
-        background-image: url(/assets/drommemaskine-s.jpg);
+        background-image: url(../assets/drommemaskine-s.jpg);
         background-size: cover;
     }
 }
