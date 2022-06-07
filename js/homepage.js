@@ -43,7 +43,9 @@ function showBook(books) {
 
     bookClone.querySelector(".author").textContent = books.book_author;
 
-    bookClone.querySelector(".product-link").href = ''
+    productLink = bookClone.querySelectorAll(".product-link");
+    productLink[0].href = 'product-page.html?id=' + books.id;
+    productLink[1].href = 'product-page.html?id=' + books.id;
 
     document.querySelector(".HPscroll").appendChild(bookClone);
 
